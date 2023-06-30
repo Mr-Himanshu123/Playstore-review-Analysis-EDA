@@ -92,4 +92,61 @@ Multivariate Analysis: This is done when more than two variables have to be anal
 
 Data Cleaning: We shall clean the dataset and handle the missing data, outliers, and categorical variables.
 
-Testing Hypothesis: We shall check if our data meets the assumptions required by most of the multivariate techniques.
+Testing Hypothesis: We shall check if our data meets the assumptions required by most of the multivariate techniques.\
+
+
+### 📖 **Steps Involved**
+After loading the dataset, we can start exploring. But before that, we need to check if the dataset is ready to perform multiple exploration operations. First, let's look at how the data is structured and organised.
+
+**Data Cleaning**
+Our dataset contains a large number of null values in the rating column, so we have dropped them. Some of the columns have a very small number of null values, so we replace the null values in these columns with the mode value of that particular column. Our data set also contains duplicate rows for a single application. We also drop the duplicate rows because the rows contain identical data. Also drop the rows that have a rating greater than 5.
+
+**Data Transforming**
+From the information in the dataframe, we can see that all the columns except rating have the object data type, but some of the columns like reviews, size, installs, and price have a numerical value. So, we have to transform them into proper data types and also remove the unwanted values from the numerical columns like ‘+’ and ‘,’ from installs and ‘$’ from price. In the size column, we have some values in KB and some values in MB, so we transform all the values into MB.
+
+**Exploratory Data Analysis**
+After establishing a good sense of each feature, we proceeded with plotting a pairwise plot between all the quantitative variables to look for any evident patterns or relationships between the features. There is a high variance in the number of installs and the number of reviews. To overcome this problem, we take the logarithmic values of installs and review columns before plotting. At first, we performed univariate analysis, i.e., analysed the single feature itself and then found correlation between the features.
+
+### 🛠 **Challenges Faced:***
+Reading the dataset and comprehending the problem statement. Our major challenge was data cleaning.
+* Handling the error, duplicate, and NaN values in the dataset.
+* User Reviews had 42% of NaN values, which could have been used for developing an understanding of the category-wise sentiments, which would help us fill 13.60% of the NaN values in the Reviews column.
+* The merged data frame of both the Play Store and user reviews had only 816 common apps. This is just 10% of the cleaned data; we could have given more valuable analysis if we had at least 70%–80% of the data available in the merged dataframes.
+
+### 📋 **Conclusion:**
+
+* Facebook is the most popular app in the Play Store..
+
+* Helix Jumps is the most positively reviewed app, and angry birds classic is the most negatively reviewed app.
+
+* When an app has high positive and negative reviews, the rating gets high, which means that when it has been updated, it has overcome the negative subjectivity.
+
+* I am rich Premium is one of the paid apps with the highest number of installations.
+
+* Around 3000 apps have not been updated in the last few years, implying that a large number of them are no longer in service.
+
+*  Paid apps are generally higher rated than free apps in each category except the parenting category.
+
+* When the app size is very high, there are few numbers, but the installation number is high.
+
+
+* The major challenge of this project was the data cleaning part. Around 15 percent of the data was missing from Play Store data, and around 42 percent of the data was missing from user reviews data.
+
+* Only 816 apps have a common link between user reviews and Play Store data. It is around 10 percent of the Play Store app number. So the data is sufficient for the analysis of merged data.
+
+*   Current version, Last Update, and Sentiment Subjectivity should be analysed for effect in rating and installation.
+
+*   The data journey of the app (installation, rating, and review) over the year should have helped to understand businesses more effectively.
+
+
+📚 References
+* Geeksforgeeks
+* W3schools
+* Statology
+* Analytics Vidya
+* Towardsdatascience
+* Python libraries documentation
+* Stackoverflow
+
+### 📜 **Feedback**
+If you have any feedback, please reach out to us at himanshurathod755@gmail
