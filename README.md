@@ -1,4 +1,4 @@
-# EDA_Project (Playstore Review Analysis)
+# EDA_Project - Playstore Review Analysis
 ### 📋 **Abstract**
 
 
